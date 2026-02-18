@@ -727,7 +727,7 @@ body {
 .photo-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 300px 300px 360px;
+  grid-template-rows: 300px 300px;
   gap: 16px;
 }
 
@@ -774,43 +774,6 @@ body {
   transform: scale(1.07);
 }
 
-/* ==== ICE CAVE ROTATION FIX ==== */
-/* The ice cave photo (IMG_8180) is a portrait image stored sideways.
-   This wrapper technique rotates it correctly within fixed containers. */
-
-.rot90-wrap {
-  position: absolute;
-  inset: 0;
-  overflow: hidden;
-}
-
-.rot90-wrap .photo-img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  /* After 90° rotation: CSS height becomes visual width, CSS width becomes visual height.
-     Use 100vw for height so visual width always covers the container width.
-     Use 420px for width so visual height covers the ~360px container height. */
-  width: 420px;
-  height: 100vw;
-  max-width: none;
-  object-fit: cover;
-  object-position: center;
-  transform: translate(-50%, -50%) rotate(90deg);
-  transition: transform 0.6s ease;
-}
-
-.photo-item.visible:hover .rot90-wrap .photo-img {
-  transform: translate(-50%, -50%) rotate(90deg) scale(1.07);
-}
-
-/* Rotation for experience accent and contact background */
-.img-rotate-90 {
-  transform: rotate(90deg) scale(2.2) !important;
-  transform-origin: center center;
-}
-
-/* ==== END ROTATION FIX ==== */
 
 .photo-caption {
   position: absolute;
