@@ -1,6 +1,6 @@
 /* =========================================
    CLARA SEDLAK — Portfolio Site
-   Bright travel editorial aesthetic
+   Modern green / black / white aesthetic
    ========================================= */
 
 *, *::before, *::after {
@@ -11,38 +11,38 @@
 
 :root {
   /* Backgrounds */
-  --bg: #FFFDF8;
-  --bg-warm: #FFF6ED;
-  --bg-alt: #F8FAFC;
-  --bg-dark: #1C1917;
+  --bg: #FFFFFF;
+  --bg-warm: #F0FDF4;
+  --bg-alt: #F8FAF9;
+  --bg-dark: #0A0A0A;
 
   /* Text */
-  --text: #292524;
-  --text-mid: #57534E;
-  --text-light: #A8A29E;
+  --text: #0A0A0A;
+  --text-mid: #374151;
+  --text-light: #6B7280;
 
-  /* Primary — Sunset coral */
-  --coral: #E85D3A;
-  --coral-light: #FF8A6A;
-  --coral-pale: #FFF0EC;
+  /* Primary — Forest Green */
+  --coral: #16A34A;
+  --coral-light: #22C55E;
+  --coral-pale: #F0FDF4;
 
-  /* Secondary — Golden amber */
-  --amber: #F59E0B;
-  --amber-light: #FCD34D;
-  --amber-pale: #FFFBEB;
+  /* Secondary — Deep Green */
+  --amber: #15803D;
+  --amber-light: #4ADE80;
+  --amber-pale: #DCFCE7;
 
-  /* Tertiary — Clear sky */
-  --sky: #0EA5E9;
-  --sky-light: #7DD3FC;
-  --sky-pale: #F0F9FF;
+  /* Tertiary — Emerald */
+  --sky: #10B981;
+  --sky-light: #34D399;
+  --sky-pale: #ECFDF5;
 
   /* Teal accent */
-  --teal: #0D9488;
+  --teal: #047857;
 
   /* UI */
   --white: #FFFFFF;
-  --border: #EDE8E0;
-  --border-mid: #D6CDC2;
+  --border: #E5E7EB;
+  --border-mid: #D1D5DB;
 
   /* Typography */
   --font-serif: 'Playfair Display', Georgia, serif;
@@ -161,7 +161,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 20px clamp(20px, 5vw, 80px);
-  background: rgba(255, 253, 248, 0.9);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid transparent;
@@ -170,7 +170,7 @@ body {
 
 .nav.scrolled {
   border-bottom-color: var(--border);
-  box-shadow: 0 2px 24px rgba(41, 37, 36, 0.06);
+  box-shadow: 0 2px 24px rgba(10, 10, 10, 0.07);
 }
 
 .nav-logo {
@@ -222,7 +222,7 @@ body {
 
 .hero {
   min-height: 100vh;
-  background: linear-gradient(140deg, #FFF8F0 0%, #FFFDF8 45%, #F0F9FF 100%);
+  background: linear-gradient(140deg, #FFFFFF 0%, #F0FDF4 50%, #ECFDF5 100%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -248,7 +248,7 @@ body {
 .hero-blob--1 {
   width: clamp(280px, 36vw, 500px);
   height: clamp(280px, 36vw, 500px);
-  background: radial-gradient(circle, #FFE4D8 0%, #FFF0EC 70%, transparent 100%);
+  background: radial-gradient(circle, #BBF7D0 0%, #F0FDF4 70%, transparent 100%);
   top: -120px;
   right: -80px;
   animation-name: blobMorph, floatA;
@@ -262,7 +262,7 @@ body {
 .hero-blob--2 {
   width: clamp(200px, 24vw, 340px);
   height: clamp(200px, 24vw, 340px);
-  background: radial-gradient(circle, #FEF3C7 0%, #FFFBEB 70%, transparent 100%);
+  background: radial-gradient(circle, #D1FAE5 0%, #ECFDF5 70%, transparent 100%);
   bottom: 60px;
   left: -80px;
   animation-name: blobMorph, floatB;
@@ -276,7 +276,7 @@ body {
 .hero-blob--3 {
   width: clamp(120px, 14vw, 220px);
   height: clamp(120px, 14vw, 220px);
-  background: radial-gradient(circle, #BAE6FD 0%, #F0F9FF 70%, transparent 100%);
+  background: radial-gradient(circle, #A7F3D0 0%, #ECFDF5 70%, transparent 100%);
   top: 28%;
   right: 32%;
   animation-name: blobMorph, floatC;
@@ -383,14 +383,14 @@ body {
   background: var(--coral);
   color: var(--white);
   border: 2px solid var(--coral);
-  box-shadow: 0 4px 20px rgba(232, 93, 58, 0.3);
+  box-shadow: 0 4px 20px rgba(22, 163, 74, 0.3);
 }
 
 .btn-primary:hover {
   background: var(--coral-light);
   border-color: var(--coral-light);
   transform: translateY(-3px);
-  box-shadow: 0 10px 32px rgba(232, 93, 58, 0.42);
+  box-shadow: 0 10px 32px rgba(22, 163, 74, 0.42);
 }
 
 .btn-ghost {
@@ -403,7 +403,7 @@ body {
   border-color: var(--coral);
   color: var(--coral);
   transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(232, 93, 58, 0.12);
+  box-shadow: 0 6px 20px rgba(22, 163, 74, 0.14);
 }
 
 /* Hero image */
@@ -426,8 +426,8 @@ body {
   box-shadow:
     0 0 0 3px var(--white),
     0 0 0 5px var(--coral),
-    0 24px 64px rgba(232, 93, 58, 0.22),
-    0 8px 24px rgba(41, 37, 36, 0.1);
+    0 24px 64px rgba(22, 163, 74, 0.22),
+    0 8px 24px rgba(10, 10, 10, 0.1);
 }
 
 .hero-photo {
@@ -458,7 +458,8 @@ body {
   background: var(--white);
   padding: 8px 18px;
   border-radius: 40px;
-  box-shadow: 0 2px 16px rgba(41, 37, 36, 0.09);
+  box-shadow: 0 2px 16px rgba(10, 10, 10, 0.08);
+  border: 1px solid var(--border);
 }
 
 .dot { color: var(--coral); }
@@ -565,7 +566,7 @@ body {
   border-radius: var(--radius);
   overflow: hidden;
   margin: 0;
-  box-shadow: 0 12px 40px rgba(41, 37, 36, 0.12);
+  box-shadow: 0 12px 40px rgba(10, 10, 10, 0.1);
 }
 
 .about-photo-frame--1 {
@@ -595,12 +596,12 @@ body {
 
 .about-photo-frame--1.visible:hover {
   transform: rotate(-0.5deg) translateY(-6px);
-  box-shadow: 0 24px 60px rgba(232, 93, 58, 0.18);
+  box-shadow: 0 24px 60px rgba(22, 163, 74, 0.18);
 }
 
 .about-photo-frame--2.visible:hover {
   transform: rotate(0.5deg) translateY(-6px) translateX(20px);
-  box-shadow: 0 24px 60px rgba(232, 93, 58, 0.18);
+  box-shadow: 0 24px 60px rgba(22, 163, 74, 0.18);
 }
 
 .about-photo-frame img {
@@ -638,17 +639,17 @@ body {
 
 .stat:nth-child(1) {
   background: var(--coral-pale);
-  box-shadow: 0 4px 20px rgba(232, 93, 58, 0.1);
+  box-shadow: 0 4px 20px rgba(22, 163, 74, 0.1);
 }
 
 .stat:nth-child(2) {
   background: var(--amber-pale);
-  box-shadow: 0 4px 20px rgba(245, 158, 11, 0.1);
+  box-shadow: 0 4px 20px rgba(21, 128, 61, 0.1);
 }
 
 .stat:nth-child(3) {
   background: var(--sky-pale);
-  box-shadow: 0 4px 20px rgba(14, 165, 233, 0.1);
+  box-shadow: 0 4px 20px rgba(16, 185, 129, 0.1);
 }
 
 .stat-num {
@@ -720,7 +721,7 @@ body {
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(to right, var(--coral), var(--amber), var(--sky), var(--teal));
+  background: linear-gradient(to right, var(--coral), var(--amber-light), var(--sky), var(--teal));
 }
 
 .photo-grid {
@@ -736,7 +737,7 @@ body {
   margin: 0;
   border-radius: var(--radius);
   background: var(--border);
-  box-shadow: 0 8px 30px rgba(41, 37, 36, 0.1);
+  box-shadow: 0 8px 30px rgba(10, 10, 10, 0.08);
   opacity: 0;
   transform: translateY(24px);
   transition: opacity 0.6s ease, transform 0.6s ease, box-shadow 0.4s ease;
@@ -749,7 +750,7 @@ body {
 
 .photo-item.visible:hover {
   transform: translateY(-8px);
-  box-shadow: 0 24px 56px rgba(41, 37, 36, 0.18);
+  box-shadow: 0 24px 56px rgba(10, 10, 10, 0.14);
 }
 
 .photo-item--tall {
@@ -773,13 +774,51 @@ body {
   transform: scale(1.07);
 }
 
+/* ==== ICE CAVE ROTATION FIX ==== */
+/* The ice cave photo (IMG_8180) is a portrait image stored sideways.
+   This wrapper technique rotates it correctly within fixed containers. */
+
+.rot90-wrap {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.rot90-wrap .photo-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* After 90° rotation: CSS height becomes visual width, CSS width becomes visual height.
+     Use 100vw for height so visual width always covers the container width.
+     Use 420px for width so visual height covers the ~360px container height. */
+  width: 420px;
+  height: 100vw;
+  max-width: none;
+  object-fit: cover;
+  object-position: center;
+  transform: translate(-50%, -50%) rotate(90deg);
+  transition: transform 0.6s ease;
+}
+
+.photo-item.visible:hover .rot90-wrap .photo-img {
+  transform: translate(-50%, -50%) rotate(90deg) scale(1.07);
+}
+
+/* Rotation for experience accent and contact background */
+.img-rotate-90 {
+  transform: rotate(90deg) scale(2.2) !important;
+  transform-origin: center center;
+}
+
+/* ==== END ROTATION FIX ==== */
+
 .photo-caption {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   padding: 20px 18px 14px;
-  background: linear-gradient(to top, rgba(29, 17, 10, 0.72) 0%, transparent 100%);
+  background: linear-gradient(to top, rgba(10, 10, 10, 0.72) 0%, transparent 100%);
   color: rgba(255, 255, 255, 0.9);
   font-size: 0.63rem;
   letter-spacing: 0.1em;
@@ -788,6 +827,7 @@ body {
   opacity: 0;
   transform: translateY(8px);
   transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 2;
 }
 
 .photo-item.visible:hover .photo-caption {
@@ -810,7 +850,7 @@ body {
   height: 180px;
   overflow: hidden;
   border-radius: 0 0 0 var(--radius-lg);
-  opacity: 0.15;
+  opacity: 0.12;
   pointer-events: none;
   z-index: 0;
 }
@@ -855,7 +895,7 @@ body {
 }
 
 .timeline-item:hover::before {
-  background: rgba(232, 93, 58, 0.04);
+  background: rgba(22, 163, 74, 0.04);
 }
 
 .timeline-meta {
@@ -990,9 +1030,9 @@ body {
   inset: 0;
   background: linear-gradient(
     150deg,
-    rgba(28, 25, 23, 0.86) 0%,
-    rgba(232, 93, 58, 0.28) 60%,
-    rgba(14, 165, 233, 0.15) 100%
+    rgba(10, 10, 10, 0.92) 0%,
+    rgba(22, 163, 74, 0.25) 60%,
+    rgba(16, 185, 129, 0.12) 100%
   );
 }
 
@@ -1050,7 +1090,7 @@ body {
 
 .contact-email:hover {
   color: var(--coral-light);
-  border-color: var(--amber);
+  border-color: var(--amber-light);
 }
 
 .contact-meta {
@@ -1064,8 +1104,8 @@ body {
 /* ==== FOOTER ==== */
 
 .footer {
-  background: var(--bg);
-  border-top: 1px solid var(--border);
+  background: var(--bg-dark);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
   padding: 28px 0;
 }
 
@@ -1076,7 +1116,7 @@ body {
 }
 
 .footer-inner span {
-  color: var(--text-light);
+  color: rgba(255, 255, 255, 0.35);
 }
 
 /* ==== SCROLL REVEAL ==== */
