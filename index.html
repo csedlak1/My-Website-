@@ -22,6 +22,13 @@
       </ul>
     </nav>
 
+    <!-- Floating decorative blobs -->
+    <div class="hero-decor" aria-hidden="true">
+      <div class="hero-blob hero-blob--1"></div>
+      <div class="hero-blob hero-blob--2"></div>
+      <div class="hero-blob hero-blob--3"></div>
+    </div>
+
     <div class="hero-content">
       <div class="hero-text">
         <p class="hero-eyebrow">Senior Content Strategist &amp; Editor</p>
@@ -35,7 +42,6 @@
       <div class="hero-image-wrap">
         <div class="hero-image-frame">
           <img src="Travel%20Images/IMG_3039.jpeg" alt="Clara Sedlak" class="hero-photo" onerror="this.closest('.hero-image-frame').classList.add('no-photo')" />
-          <div class="hero-image-overlay"></div>
         </div>
         <div class="hero-label">
           <span class="mono">Brooklyn, NY</span>
@@ -59,30 +65,43 @@
           <span class="mono label-text">01 — About</span>
         </div>
         <div class="section-body">
-          <h2 class="section-heading">The editor<br /><em>behind the journey.</em></h2>
-          <div class="about-text">
-            <p>For nearly two decades, I've been at the intersection of travel, storytelling, and strategy—helping audiences discover the world through meticulously crafted content. From launching digital editorial platforms to pioneering AI-powered travel tools, I bring a rare blend of creative vision and data-driven instinct.</p>
-            <p>My career has taken me from the editorial floors of <strong>Travel + Leisure</strong> and <strong>Jetsetter</strong> to leading content strategy at <strong>Tripadvisor</strong>, where I've shaped how millions of travelers plan, dream, and explore.</p>
-          </div>
-          <div class="stats-row">
-            <div class="stat">
-              <span class="stat-num">18+</span>
-              <span class="stat-label">Years in travel media</span>
+          <h2 class="section-heading reveal">The editor<br /><em>behind the journey.</em></h2>
+          <div class="about-layout">
+            <div class="about-main">
+              <div class="about-text">
+                <p class="reveal">For nearly two decades, I've been at the intersection of travel, storytelling, and strategy—helping audiences discover the world through meticulously crafted content. From launching digital editorial platforms to pioneering AI-powered travel tools, I bring a rare blend of creative vision and data-driven instinct.</p>
+                <p class="reveal">My career has taken me from the editorial floors of <strong>Travel + Leisure</strong> and <strong>Jetsetter</strong> to leading content strategy at <strong>Tripadvisor</strong>, where I've shaped how millions of travelers plan, dream, and explore.</p>
+              </div>
+              <div class="stats-row">
+                <div class="stat reveal">
+                  <span class="stat-num" data-count="18" data-suffix="+">18+</span>
+                  <span class="stat-label">Years in travel media</span>
+                </div>
+                <div class="stat reveal">
+                  <span class="stat-num" data-count="3" data-suffix="×">3×</span>
+                  <span class="stat-label">Social audience growth at Jetsetter</span>
+                </div>
+                <div class="stat reveal">
+                  <span class="stat-num" data-count="2" data-suffix="×">2×</span>
+                  <span class="stat-label">Organic search growth</span>
+                </div>
+              </div>
+              <div class="languages reveal">
+                <span class="mono lang-label">Languages —</span>
+                <span class="lang-item">Italian <em>(fluent)</em></span>
+                <span class="lang-item">Spanish <em>(fluent)</em></span>
+                <span class="lang-item">French <em>(proficient)</em></span>
+              </div>
             </div>
-            <div class="stat">
-              <span class="stat-num">3×</span>
-              <span class="stat-label">Social audience growth at Jetsetter</span>
+            <!-- Travel photos beside about text -->
+            <div class="about-photos">
+              <figure class="about-photo-frame about-photo-frame--1">
+                <img src="Travel%20Images/IMG_7972.jpeg" alt="Open road in Iceland" />
+              </figure>
+              <figure class="about-photo-frame about-photo-frame--2">
+                <img src="Travel%20Images/386FDA75-A75A-4FFA-B35F-AED81C5A427F.jpeg" alt="Skiing at golden hour" />
+              </figure>
             </div>
-            <div class="stat">
-              <span class="stat-num">2×</span>
-              <span class="stat-label">Organic search growth</span>
-            </div>
-          </div>
-          <div class="languages">
-            <span class="mono lang-label">Languages —</span>
-            <span class="lang-item">Italian <em>(fluent)</em></span>
-            <span class="lang-item">Spanish <em>(fluent)</em></span>
-            <span class="lang-item">French <em>(proficient)</em></span>
           </div>
         </div>
       </div>
@@ -97,21 +116,21 @@
           <span class="mono label-text">02 — Travel</span>
         </div>
         <div class="section-body">
-          <h2 class="section-heading">Stories from<br /><em>the field.</em></h2>
+          <h2 class="section-heading reveal">Stories from<br /><em>the field.</em></h2>
           <div class="photo-grid">
-            <figure class="photo-item photo-item--tall fade-up">
+            <figure class="photo-item photo-item--tall">
               <img src="Travel%20Images/IMG_3039.jpeg" alt="Hot air balloon ride over Mexico" class="photo-img" />
               <figcaption class="photo-caption mono">Mexico — Hot Air Balloon</figcaption>
             </figure>
-            <figure class="photo-item fade-up">
+            <figure class="photo-item">
               <img src="Travel%20Images/386FDA75-A75A-4FFA-B35F-AED81C5A427F.jpeg" alt="Skiing at golden hour" class="photo-img" />
               <figcaption class="photo-caption mono">On the slopes</figcaption>
             </figure>
-            <figure class="photo-item fade-up">
+            <figure class="photo-item">
               <img src="Travel%20Images/IMG_7972.jpeg" alt="Iceland — open road and mountains" class="photo-img" />
               <figcaption class="photo-caption mono">Iceland</figcaption>
             </figure>
-            <figure class="photo-item photo-item--wide fade-up">
+            <figure class="photo-item photo-item--wide">
               <img src="Travel%20Images/IMG_8180.jpeg" alt="Exploring a glacier ice cave" class="photo-img" />
               <figcaption class="photo-caption mono">Glacier Ice Cave</figcaption>
             </figure>
@@ -123,18 +142,22 @@
 
   <!-- EXPERIENCE -->
   <section id="experience" class="section experience">
+    <!-- Subtle corner photo accent -->
+    <div class="experience-photo-accent" aria-hidden="true">
+      <img src="Travel%20Images/IMG_8180.jpeg" alt="" />
+    </div>
     <div class="container">
       <div class="section-grid">
         <div class="section-label">
           <span class="mono label-text">03 — Experience</span>
         </div>
         <div class="section-body">
-          <h2 class="section-heading">Career<br /><em>highlights.</em></h2>
+          <h2 class="section-heading reveal">Career<br /><em>highlights.</em></h2>
 
           <div class="timeline">
 
             <!-- Tripadvisor Senior Manager -->
-            <div class="timeline-item">
+            <div class="timeline-item reveal">
               <div class="timeline-meta">
                 <span class="company">Tripadvisor</span>
                 <span class="location mono">New York, NY</span>
@@ -160,7 +183,7 @@
             </div>
 
             <!-- Tripadvisor Executive Editor -->
-            <div class="timeline-item">
+            <div class="timeline-item reveal">
               <div class="timeline-meta">
                 <span class="company">Tripadvisor</span>
                 <span class="location mono">New York, NY</span>
@@ -185,7 +208,7 @@
             </div>
 
             <!-- Jetsetter Executive Editor -->
-            <div class="timeline-item">
+            <div class="timeline-item reveal">
               <div class="timeline-meta">
                 <span class="company">Jetsetter</span>
                 <span class="location mono">New York, NY</span>
@@ -212,7 +235,7 @@
             </div>
 
             <!-- Jetsetter Senior Special Projects Editor -->
-            <div class="timeline-item">
+            <div class="timeline-item reveal">
               <div class="timeline-meta">
                 <span class="company">Jetsetter</span>
                 <span class="location mono">New York, NY</span>
@@ -235,7 +258,7 @@
             </div>
 
             <!-- Travel + Leisure -->
-            <div class="timeline-item">
+            <div class="timeline-item reveal">
               <div class="timeline-meta">
                 <span class="company">Travel + Leisure</span>
                 <span class="location mono">New York, NY</span>
@@ -269,13 +292,17 @@
 
   <!-- CONTACT -->
   <section id="contact" class="section contact">
+    <!-- Full photo background -->
+    <div class="contact-bg" aria-hidden="true">
+      <img src="Travel%20Images/IMG_8180.jpeg" alt="" />
+    </div>
     <div class="container">
       <div class="contact-inner">
-        <p class="mono contact-eyebrow">04 — Contact</p>
-        <h2 class="contact-heading">Let's make<br /><em>something great.</em></h2>
-        <p class="contact-sub">Available for editorial leadership, content strategy consulting, and brand partnerships.</p>
-        <a href="mailto:clarasedlak1@gmail.com" class="contact-email">clarasedlak1@gmail.com</a>
-        <div class="contact-meta">
+        <p class="mono contact-eyebrow reveal">04 — Contact</p>
+        <h2 class="contact-heading reveal">Let's make<br /><em>something great.</em></h2>
+        <p class="contact-sub reveal">Available for editorial leadership, content strategy consulting, and brand partnerships.</p>
+        <a href="mailto:clarasedlak1@gmail.com" class="contact-email reveal">clarasedlak1@gmail.com</a>
+        <div class="contact-meta reveal">
           <span class="mono">Brooklyn, NY</span>
           <span class="dot">·</span>
           <span class="mono">917.328.1789</span>
